@@ -112,7 +112,7 @@ def plot_results(model, X, y, X_test, y_test, y_pred, cm, feature_names, class_n
         ax = axes[idx]
         
         # Train a simple tree on just these two features
-        X_pair = X.iloc[:, pair].values
+        X_pair = X.iloc[:, list(pair)].values
         clf = DecisionTreeClassifier(max_depth=3, random_state=42)
         clf.fit(X_pair, y)
         
