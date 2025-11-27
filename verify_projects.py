@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+import glob
 
 # Get absolute path of current directory
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -21,34 +22,39 @@ projects = [
 def run_project(project_name):
     project_path = os.path.join(BASE_DIR, project_name)
     main_script = os.path.join(project_path, "main.py")
+    viz_dir = os.path.join(project_path, "visualizations")
     
-    print(f"Testing {project_name}...", end=" ", flush=True)
+    print(f"\n--- Testing {project_name} ---")
     
     if not os.path.exists(main_script):
-        print("❌ FAILED (main.py not found)")
+        print(f"FAIL: {main_script} does not exist")
         return False
 
     try:
-        # Run process and capture output
+        # Run process WITHOUT capturing output so we can see it
+        print(f"Running {main_script}...")
         result = subprocess.run(
             [sys.executable, "main.py"],
             cwd=project_path,
-            capture_output=True,
-            text=True,
-            encoding='utf-8',
-            errors='ignore'
+            check=False
         )
         
         if result.returncode == 0:
-            print("✅ PASS")
-            return True
+            print("Return code: 0 (Success)")
+            # Check if any image was generated
+            images = glob.glob(os.path.join(viz_dir, "*.png"))
+            if images:
+                print(f"PASS: Found {len(images)} images")
+                return True
+            else:
+                print("FAIL: No images generated in visualizations folder")
+                return False
         else:
-            print("❌ FAILED")
-            print(f"Error output:\n{result.stderr[:200]}...") # Print first 200 chars of error
+            print(f"FAIL: Return code {result.returncode}")
             return False
             
     except Exception as e:
-        print(f"❌ ERROR: {str(e)}")
+        print(f"FAIL: Exception {e}")
         return False
 
 def main():

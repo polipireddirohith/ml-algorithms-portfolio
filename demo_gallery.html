@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Algorithms Portfolio - Results Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        p.subtitle { margin-top: 10px; opacity: 0.9; font-size: 1.1rem; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-header {
+            background-color: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin: 0;
+        }
+        
+        .tag {
+            background-color: #e2e8f0;
+            color: #4a5568;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .tag.supervised { background-color: #c6f6d5; color: #22543d; }
+        .tag.unsupervised { background-color: #bee3f8; color: #2c5282; }
+        .tag.deep { background-color: #fed7e2; color: #702459; }
+        
+        .project-content {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ML Algorithms Portfolio</h1>
+        <p class="subtitle">Visual Results & Performance Metrics</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 01 Linear Regression -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">01. Linear Regression</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <img src="01_linear_regression/visualizations/linear_regression_results.png" alt="Linear Regression Results" onerror="this.src='https://via.placeholder.com/800x600?text=Image+Not+Found'">
+            </div>
+        </div>
+
+        <!-- 02 Logistic Regression -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">02. Logistic Regression</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <img src="02_logistic_regression/visualizations/logistic_regression_results.png" alt="Logistic Regression Results" onerror="this.src='https://via.placeholder.com/800x600?text=Image+Not+Found'">
+            </div>
+        </div>
+
+        <!-- 03 Decision Trees -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">03. Decision Trees</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <div class="grid">
+                    <img src="03_decision_trees/visualizations/decision_tree_results.png" alt="Decision Tree Structure">
+                    <img src="03_decision_trees/visualizations/decision_boundaries.png" alt="Decision Boundaries">
+                </div>
+            </div>
+        </div>
+
+        <!-- 04 Random Forest -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">04. Random Forest</h2>
+                <span class="tag supervised">Ensemble</span>
+            </div>
+            <div class="project-content">
+                <img src="04_random_forest/visualizations/random_forest_results.png" alt="Random Forest Results">
+            </div>
+        </div>
+
+        <!-- 05 SVM -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">05. Support Vector Machine</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <img src="05_support_vector_machine/visualizations/svm_results.png" alt="SVM Results">
+            </div>
+        </div>
+
+        <!-- 06 K-Means -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">06. K-Means Clustering</h2>
+                <span class="tag unsupervised">Unsupervised</span>
+            </div>
+            <div class="project-content">
+                <img src="06_kmeans_clustering/visualizations/kmeans_results.png" alt="K-Means Results">
+            </div>
+        </div>
+
+        <!-- 07 KNN -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">07. K-Nearest Neighbors</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <img src="07_knn_classifier/visualizations/knn_results.png" alt="KNN Results">
+            </div>
+        </div>
+
+        <!-- 08 Naive Bayes -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">08. Naive Bayes</h2>
+                <span class="tag supervised">Supervised</span>
+            </div>
+            <div class="project-content">
+                <img src="08_naive_bayes/visualizations/naive_bayes_results.png" alt="Naive Bayes Results">
+            </div>
+        </div>
+
+        <!-- 09 Neural Networks -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">09. Neural Networks</h2>
+                <span class="tag deep">Deep Learning</span>
+            </div>
+            <div class="project-content">
+                <img src="09_neural_networks/visualizations/neural_network_results.png" alt="Neural Network Results">
+            </div>
+        </div>
+
+        <!-- 10 XGBoost -->
+        <div class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">10. XGBoost</h2>
+                <span class="tag deep">Ensemble</span>
+            </div>
+            <div class="project-content">
+                <img src="10_gradient_boosting/visualizations/xgboost_results.png" alt="XGBoost Results">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Generated by ML Algorithms Portfolio</p>
+    </footer>
+</body>
+</html>
