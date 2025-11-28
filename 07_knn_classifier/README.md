@@ -14,6 +14,3 @@ KNN is a simple, instance-based learning algorithm that classifies based on the 
 pip install -r requirements.txt
 python main.py
 ```
-
-## 💡 Applications
-Pattern recognition, recommendation systems, anomaly detection
