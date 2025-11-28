@@ -52,17 +52,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Interview Questions Covered
 
-1. What is Linear Regression?
-2. What are the assumptions of Linear Regression?
-3. How do you evaluate a regression model?
-4. What is the difference between R² and Adjusted R²?
-5. How do you handle multicollinearity?
-
-## 🔍 Real-World Applications
-
-- Price prediction (real estate, stocks)
-- Sales forecasting
-- Risk assessment
-- Trend analysis

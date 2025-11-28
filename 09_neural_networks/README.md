@@ -15,5 +15,3 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Applications
-Image recognition, NLP, speech recognition, autonomous systems

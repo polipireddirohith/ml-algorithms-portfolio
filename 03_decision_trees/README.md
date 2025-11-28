@@ -47,17 +47,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Interview Questions Covered
 
-1. How do Decision Trees work?
-2. What is Gini Impurity vs Entropy?
-3. How to prevent overfitting in Decision Trees?
-4. What is pruning?
-5. Advantages and disadvantages of Decision Trees?
-
-## 🔍 Real-World Applications
-
-- Medical diagnosis
-- Credit approval
-- Customer segmentation
-- Fraud detection

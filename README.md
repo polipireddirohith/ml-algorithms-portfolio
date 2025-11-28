@@ -43,20 +43,4 @@ python main.py
 - **Data Visualization**: Matplotlib, Seaborn
 - **Feature Engineering**: Preprocessing, Scaling
 
-## 🎯 Interview Ready
 
-Each project includes:
-- ✅ Clean, documented code
-- ✅ Real-world use cases
-- ✅ Performance metrics
-- ✅ Visualizations
-- ✅ Theory explanations
-- ✅ Best practices
-
-## 📝 Author
-
-Created for interview preparation and ML portfolio demonstration.
-
-## 📄 License
-
-MIT License - Feel free to use for learning and interviews!
