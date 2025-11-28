@@ -31,10 +31,3 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Interview Questions
-
-1. How does Random Forest work?
-2. Difference between Bagging and Boosting?
-3. What is Out-of-Bag error?
-4. How to tune Random Forest hyperparameters?
-5. Advantages over single Decision Tree?
