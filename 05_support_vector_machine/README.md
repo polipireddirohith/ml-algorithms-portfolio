@@ -14,6 +14,3 @@ SVM finds the optimal hyperplane that maximally separates different classes usin
 pip install -r requirements.txt
 python main.py
 ```
-
-## 💡 Applications
-Medical diagnosis, image classification, text categorization
