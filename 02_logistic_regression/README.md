@@ -52,17 +52,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Interview Questions Covered
 
-1. What is Logistic Regression?
-2. Difference between Linear and Logistic Regression?
-3. What is the sigmoid function?
-4. How do you handle imbalanced classes?
-5. What is ROC-AUC?
 
-## 🔍 Real-World Applications
 
-- Customer churn prediction
-- Email spam detection
-- Disease diagnosis
-- Credit risk assessment
