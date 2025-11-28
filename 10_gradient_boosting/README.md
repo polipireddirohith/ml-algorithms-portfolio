@@ -15,5 +15,3 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 💡 Applications
-Kaggle competitions, ranking systems, recommendation engines
