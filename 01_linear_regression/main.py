@@ -1,6 +1,5 @@
 """
 Linear Regression - House Price Prediction
-Author: ML Portfolio
 Description: Implementation of Linear Regression for predicting house prices
 """
 
