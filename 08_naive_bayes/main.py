@@ -1,6 +1,5 @@
 """
 Naive Bayes - Spam Detection
-Author: ML Portfolio
 """
 
 import numpy as np
