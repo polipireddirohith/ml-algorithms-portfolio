@@ -1,6 +1,5 @@
 """
 Decision Trees - Iris Classification
-Author: ML Portfolio
 Description: Multi-class classification using Decision Trees
 """
 
