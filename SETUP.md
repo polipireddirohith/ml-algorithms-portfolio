@@ -40,14 +40,6 @@ python main.py
 9. **Neural Networks** - MNIST Digits
 10. **XGBoost** - Advanced Classification
 
-## 🎯 Interview Preparation Tips
-
-- Run each project and understand the output
-- Review the README for theory
-- Modify hyperparameters and observe changes
-- Be ready to explain metrics and visualizations
-- Practice explaining trade-offs between algorithms
-
 ## 📊 What Each Project Demonstrates
 
 - **Data preprocessing** and feature engineering
@@ -63,6 +55,4 @@ If you encounter issues with TensorFlow or XGBoost:
 - The projects have fallback implementations using sklearn
 - You can still run and demonstrate the concepts
 
-## 📝 License
 
-MIT License - Free to use for learning and interviews!
