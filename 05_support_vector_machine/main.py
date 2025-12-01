@@ -1,6 +1,5 @@
 """
 Support Vector Machine - Breast Cancer Classification
-Author: ML Portfolio
 """
 
 import numpy as np
