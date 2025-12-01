@@ -1,6 +1,5 @@
 """
 Random Forest - Wine Quality Classification
-Author: ML Portfolio
 Description: Ensemble learning for wine quality prediction
 """
 
