@@ -1,6 +1,5 @@
 """
 K-Means Clustering - Customer Segmentation
-Author: ML Portfolio
 """
 
 import numpy as np
