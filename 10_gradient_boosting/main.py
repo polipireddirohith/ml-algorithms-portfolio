@@ -1,6 +1,5 @@
 """
 XGBoost - Gradient Boosting for Classification
-Author: ML Portfolio
 """
 
 import numpy as np

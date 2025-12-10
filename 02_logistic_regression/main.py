@@ -1,6 +1,5 @@
 """
 Logistic Regression - Customer Churn Prediction
-Author: ML Portfolio
 Description: Binary classification to predict customer churn
 """
 

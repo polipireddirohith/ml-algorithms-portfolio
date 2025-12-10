@@ -1,6 +1,5 @@
 """
 Neural Networks - MNIST Digit Classification
-Author: ML Portfolio
 """
 
 import numpy as np

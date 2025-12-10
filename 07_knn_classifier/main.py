@@ -1,6 +1,5 @@
 """
 K-Nearest Neighbors - Digit Recognition
-Author: ML Portfolio
 """
 
 import numpy as np
