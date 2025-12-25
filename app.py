@@ -128,14 +128,21 @@ def run_project_script(project_dir):
         return None, "Error: main.py not found"
     
     try:
-        # Run the script
+        # Run the script with forced UTF-8 environment
         start_time = time.time()
+        
+        # Prepare environment to force UTF-8
+        env = os.environ.copy()
+        env['PYTHONIOENCODING'] = 'utf-8'
+        
         result = subprocess.run(
             [sys.executable, "main.py"],
             cwd=project_dir,
             capture_output=True,
             text=True,
-            check=False
+            encoding='utf-8',
+            check=False,
+            env=env
         )
         duration = time.time() - start_time
         
@@ -188,7 +195,7 @@ with col1:
     st.code(f"d:\\ml_algo\\{selected_project_key}\\main.py", language="text")
     
     st.markdown("### ⚙️ Action")
-    if st.button("🚀 Run Live Demo", use_container_width=True):
+    if st.button("🚀 Run Live Demo", width="stretch"):
         with st.spinner(f"Training {project_info['title']} model... Please wait..."):
             result, duration = run_project_script(project_path)
             
@@ -220,7 +227,7 @@ with col2:
             images = load_visualizations(project_path)
             if images:
                 for img_path in images:
-                    st.image(img_path, caption=os.path.basename(img_path), use_column_width=True)
+                    st.image(img_path, caption=os.path.basename(img_path), width="stretch")
             else:
                 st.warning("No visualizations found. Check the text output.")
         
@@ -233,7 +240,7 @@ with col2:
         if images:
             st.info("Displaying cached results. Click 'Run Live Demo' to re-train.")
             for img_path in images:
-                st.image(img_path, caption=f"Cached: {os.path.basename(img_path)}", use_column_width=True)
+                st.image(img_path, caption=f"Cached: {os.path.basename(img_path)}", width="stretch")
         else:
             st.info("No results found. Click 'Run Live Demo' to start.")
 
